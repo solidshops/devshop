@@ -1,0 +1,6 @@
+.idea/
+.vagrant/
+node_modules/
+config/config.json
+coverage
+write_file.txt
