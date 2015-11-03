@@ -9,6 +9,12 @@ var g_count = 0;
 
 //FILE: read config
 var file_config = global.__base + '/config/config.json';
+
+var fs = require('fs');
+var contents = fs.readFileSync(file_config).toString();
+console.log(contents);
+
+
 if (!fs.existsSync(file_config)) {
     throw new Error('The following config file is not valid: ' + file_config);
 }
