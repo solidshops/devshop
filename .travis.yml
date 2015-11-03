@@ -5,5 +5,5 @@ node_js:
   
 before_script:
   - cp config/config.json.dist config/config.json
-  - sed -i --- 's/%%API_SECRET%%/${API_SECRET}/g' config/config.json.dist
+  - sed -i - 's/%%API_SECRET%%/${API_SECRET}/g' config/config.json.dist
   - cat config/config.json.dist
