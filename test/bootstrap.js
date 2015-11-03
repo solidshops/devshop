@@ -9,7 +9,7 @@ global.async = require('async'),
 global.request = require('request'),
 global.nock = require('nock'),
 global.nconf = require('nconf');
-
+global.fs = require('fs');
 
 // Start the application
 global.app = require('../app.js');

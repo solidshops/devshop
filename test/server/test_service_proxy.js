@@ -41,8 +41,8 @@ describe('Service: proxy', function () {
           obj_proxy.request(configObject,function(responseObject){
               validateProxyResponse(responseObject);
               expect(responseObject.statusCode).to.equal(200);
-              expect(responseObject.headers['P3P']).to.equals('CP="not implemented"');
-              expect(responseObject.headers['Content-Type']).to.contain('text/html');
+              expect(responseObject.headers['p3p']).to.equals('CP="not implemented"');
+              expect(responseObject.headers['content-type']).to.contain('text/html');
               done();
           });
         });
@@ -58,7 +58,7 @@ describe('Service: proxy', function () {
           obj_proxy.request(configObject,function(responseObject){
               validateProxyResponse(responseObject);
               expect(responseObject.statusCode).to.equal(302);
-              expect(responseObject.headers['Location']).to.contain(nconf.get().www.scheme);
+              expect(responseObject.headers['location']).to.contain(nconf.get().www.scheme);
               done();
           });
       });

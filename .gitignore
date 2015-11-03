@@ -1,5 +1,6 @@
 .idea/
 .vagrant/
+data/
 node_modules/
 config/config.json
 coverage

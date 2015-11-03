@@ -95,7 +95,7 @@ module.exports = function () {
                 var returnObject = {};
 
                 if (error) {
-                    console.log(error);
+                    //console.log(error);
                     returnObject.success = false;
                     returnObject.statusCode = 500;
                     callback(returnObject);
@@ -121,7 +121,7 @@ module.exports = function () {
                     delete returnObject.headers['set-cookie'];
                     delete returnObject.headers['content-length'];
                     
-                    console.log(returnObject);
+                    //console.log(returnObject);
 
                     returnObject.payload = str_body;
 

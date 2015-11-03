@@ -56,7 +56,7 @@ describe('Service: Theme', function () {
 
         });
 
-        it('deploy theme', function (done) {
+        it.skip('deploy theme', function (done) {
             var optionsObject = {};        
 
             obj_theme.deploy(optionsObject,function(err,responseObject){
