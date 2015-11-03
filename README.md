@@ -1,101 +1,64 @@
 # SolidShops Development environment v1.0.0
 ![Logo](https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Feb/14/solidshops-logo-3651367901-1_avatar.png)
- 
 
-This is a repository with a development environment which enables you to locally run your template from our platform.
-You can easily use this environment to create your own template.
+
+This project contains a SolidShops development environment which enables you to locally run your store with your production data.
+
+This application syncs your local theme with our platform and spins up a webserver that proxies everything to our API/backend. This way you use your favorite IDE or development tools like grunt/gulp/sass and especially livereload.
 
 ## Installation
-Using this development environment requires you to have Node.js installed on your computer.
-Check the Node.js page for more info (https://nodejs.org/download/).
 
+### 1. NodeJS
 You don’t need any foreknowledge about Node.js to start this project. You’ll only need to follow a few logical steps.
 
-When you’ve installed Node.js, you can use the package manager to install the Grunt CLI package.
+###### On Your computer
 
-This package will only be used in the background and will help you with the creation of your template. You also don’t need any foreknowledge for this.
+If you want to run this application from your computer you need to have Node.js installed on your computer.
+Check the Node.js page for more info (https://nodejs.org/download/).
 
->**npm install -g grunt-cli**
 
+###### Vagrant box
+You probably already installed nodejs on your computer but if you are running an incompatible version(or you just don't want to install NodeJs on your computer) you can also use our vagrant box.
 
-Now you’ve installed Node.js and Grunt hebt geinstalleerd, you’ll have to navigate to your project folder where you’ve cloned your repository. Here you’ll have to execute some commands. This one will install the dependencies in the local node_modules folder. It’s not going to install anything on your system but only in your project folder.
+### 2. Install application
 
->**npm install**
+```bash
+mkdir {YOUR_SOLIDSHOPS_FOLDER} # /var/www/solidshops
+mkdir {YOUR_SOLIDSHOPS_FOLDER}/themes
+cd {YOUR_SOLIDSHOPS_FOLDER}
+git clone https://github.com/solidshops/devshop.git
+git clone https://bitbucket.org/solidshops/theme_blum.git themes/
+cd devshop
+npm install
+```
+Your folder structure should look like this:
 
- 
+![Logo](https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Feb/14/solidshops-logo-3651367901-1_avatar.png)
 
-The system will create a config.json and config.json.dist file in the “config/..” folder by entering the following command.
+### 3. Update config file
+This repository contains a config.json.dist file in the “config/..” folder. You will need to copy this file to config/config.json and replace all config variables with your needs.
 
-You’ll have to change the following to your own API KEY and API PASSWORD. 
+###### API keys
+You’ll have to change the following to your own API KEY and API PASSWORD.
 You’ll find these after logging on to the SolidShops platform: https://admin.solidshops.com/settings/integration
 
-
-```
-#!js
-
-{
-
-  "server":{
-
-    "host":"127.0.0.1",
-
-    "port":"3000"
-
-  },
-
-  "api":{
-
-    "scheme":"https",
-
-    "domain":"api.solidshops.com",
-
-    "auth":{
-
-      "basic":{
-
-        "user":"YOURAPIKEY",
-
-        "password":"YOURAPIPASSWORD"
-
-      }
-
-    }
-
-  },
-
-  "theme":{
-
-    "folder":"../location/to/your/folder"
-
-  },
-
-  "cache":false
-
- 
-
-}
-
-```
-
- 
+###### Theme folder
 
 Don’t forget to select the correct theme folder in the config.json file.
 
+If you are following this README you should update the config.json with the following folder variabel:
+
+>"folder":"../themes/theme_blum"
+
+## Start your local store server
 
 
-```
-#!js
+When all of this has been filled out correctly, we will be able to start up our own local development environment via "grunt serve”.
 
-"folder":"../location/to/your/folder"
-```
+>**grunt serve**
 
- 
- 
+## Deploy your theme
 
-When all of this has been filled out correctly, we will be able to start up our own local development environment via "grunt serve”. 
+You can deploy your template with
 
->**grunt serve** 
-
- 
-
-You can deploy your template via “grunt deploy”.
+>**grunt deploy**
