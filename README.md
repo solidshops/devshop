@@ -1,6 +1,7 @@
-# SolidShops Development environment v1.0.0
+# SolidShops Development environment v1.0.0 ![Travis](https://travis-ci.org/solidshops/devshop.svg)(https://travis-ci.org/solidshops/devshop)
+
 ![Logo](https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Feb/14/solidshops-logo-3651367901-1_avatar.png)
-![Travis](https://travis-ci.org/solidshops/devshop.svg)
+
 
 
 This project contains a SolidShops development environment which enables you to locally run your store with your production data.
