@@ -5,4 +5,4 @@ node_js:
   
 before_script:
   - cp config/config.json.dist config/config.json
-  - echo $API_SECRET
+  - echo ${API_SECRET}
