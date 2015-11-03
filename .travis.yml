@@ -5,7 +5,7 @@ node_js:
   
 before_script:
   - cp config/config.json.dist config/config.json
-  - sed -i bak_key -e 's/%%API_KEY%%/${API_KEY}/g' config/config.json.dist
-  - sed -i bak_secret -e  's/%%API_SECRET%%/${API_SECRET}/g' config/config.json.dist
+  - sed -i -e 's/%%API_KEY%%/${API_KEY}/g' config/config.json.dist
+  - sed -i -e  's/%%API_SECRET%%/${API_SECRET}/g' config/config.json.dist
   - git clone https://bitbucket.org/solidshops/theme_unittests.git
-  - sed -i bak_theme_folder -e  's/%%THEME_FOLDER%%/theme_unittests/g' config/config.json.dist
+  - sed -i -e  's/%%THEME_FOLDER%%/theme_unittests/g' config/config.json.dist
