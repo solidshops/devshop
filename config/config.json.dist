@@ -8,8 +8,8 @@
     "domain":"api.solidshops.com",
     "auth":{
       "basic":{
-        "user":"YOUR API KEY",
-        "password":"YOUR API SECRET"
+        "user":"%%API_KEY%%",
+        "password":"%%API_SECRET%%"
       }
     }
   },
