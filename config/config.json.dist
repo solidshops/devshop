@@ -14,7 +14,7 @@
     }
   },
   "theme":{
-    "folder":"../location/to/your/folder"
+    "folder":"%%THEME_FOLDER%%"
   },
   "cache":false
 }
