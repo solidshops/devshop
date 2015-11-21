@@ -20,6 +20,7 @@ You don’t need any foreknowledge about Node.js to start this project. You’ll
 If you want to run this application from your computer you need to have Node.js and grunt-cli installed on your computer.
 
 * Check the Node.js page for more info (https://nodejs.org/download/).
+* npm install -g grunt-cli
 
 
 ###### Vagrant box
