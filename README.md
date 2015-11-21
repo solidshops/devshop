@@ -12,13 +12,14 @@ This application syncs your local theme with our platform and spins up a webserv
 
 ## Installation
 
-### 1. NodeJS
+### 1. NodeJS & NPM & Grunt
 You don’t need any foreknowledge about Node.js to start this project. You’ll only need to follow a few logical steps.
 
 ###### On Your computer
 
-If you want to run this application from your computer you need to have Node.js installed on your computer.
-Check the Node.js page for more info (https://nodejs.org/download/).
+If you want to run this application from your computer you need to have Node.js and grunt-cli installed on your computer.
+
+* Check the Node.js page for more info (https://nodejs.org/download/).
 
 
 ###### Vagrant box
