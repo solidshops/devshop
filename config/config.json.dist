@@ -14,7 +14,8 @@
     }
   },
   "theme":{
-    "folder":"%%THEME_FOLDER%%"
+    "folder":"%%THEME_FOLDER%%",
+    "name": "ddd"
   },
   "cache":false
 }

@@ -89,7 +89,7 @@ module.exports = function () {
     this.getLocalDevelopmentTheme = function (callback) {
 
         var method = "GET";
-        var uri = nconf.get().api.scheme + "://" + nconf.get().api.domain + '/v1/themes?name=devshop-theme';
+        var uri = nconf.get().api.scheme + "://" + nconf.get().api.domain + '/v1/themes?name='+nconf.get().theme.name;
 
         request(
             {
@@ -135,7 +135,7 @@ module.exports = function () {
             }
 
             var themeObject = {};
-            themeObject.name = "devshop-theme";
+            themeObject.name = nconf.get().theme.name;
             themeObject.assets = templatesObject;
 
 
@@ -204,7 +204,7 @@ module.exports = function () {
                 return callback(null, returnObject);
             }
             var themeObject = {};
-            themeObject.name = "devshop-theme";
+            themeObject.name = nconf.get().theme.name;
             themeObject.assets = templatesObject;
 
 
