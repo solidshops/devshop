@@ -50,7 +50,7 @@ obj_theme.getLocalDevelopmentTheme(function (id) {
             if (responseObject.success) {
 
             } else {
-                console.error("error while uploading theme:");
+                console.error("error while uploading theme(update):");
                 console.error(responseObject.error);
             }
 
@@ -62,7 +62,7 @@ obj_theme.getLocalDevelopmentTheme(function (id) {
             if (responseObject.success) {
 
             } else {
-                console.error("error while uploading theme:");
+                console.error("error while uploading theme(create):");
                 console.error(responseObject.error);
             }
         });

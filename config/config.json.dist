@@ -15,7 +15,7 @@
   },
   "theme":{
     "folder":"%%THEME_FOLDER%%",
-    "name": "ddd"
+    "name": "devshop-theme"
   },
   "cache":false
 }
