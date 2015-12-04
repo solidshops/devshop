@@ -37,9 +37,6 @@ git clone https://bitbucket.org/solidshops/theme_blum.git themes/
 cd devshop
 npm install
 ```
-Your folder structure should look like this:
-
-![Logo](https://bitbucket-assetroot.s3.amazonaws.com/c/photos/2014/Feb/14/solidshops-logo-3651367901-1_avatar.png)
 
 ### 3. Update config file
 This repository contains a config.json.dist file in the “config/..” folder. You will need to copy this file to config/config.json and replace all config variables with your needs.
