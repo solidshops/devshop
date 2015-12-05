@@ -34,6 +34,8 @@ module.exports = function(grunt) {
                 tasks: ['http:theme'],
                 options: {
                     livereload: true,
+                    spawn: false,
+                    debounceDelay: 100
                 }
             },
         },
