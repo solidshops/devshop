@@ -30,10 +30,9 @@ You probably already installed nodejs on your computer but if you are running an
 
 ```bash
 mkdir {YOUR_SOLIDSHOPS_FOLDER} # /var/www/solidshops
-mkdir {YOUR_SOLIDSHOPS_FOLDER}/themes
 cd {YOUR_SOLIDSHOPS_FOLDER}
+git clone https://bitbucket.org/solidshops/theme_blum.git themes/theme_blum
 git clone https://github.com/solidshops/devshop.git
-git clone https://bitbucket.org/solidshops/theme_blum.git themes/
 cd devshop
 npm install
 ```
