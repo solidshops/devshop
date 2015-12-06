@@ -8,7 +8,7 @@
 
 This project contains a SolidShops development environment which enables you to locally run your store with your production data.
 
-This application syncs your local theme with our platform and spins up a webserver that proxies everything to our API/backend. This way you use your favorite IDE or development tools like grunt/gulp/sass and especially livereload.
+This application syncs your local theme with our platform and spins up a webserver that proxies everything to our API/backend. This way you can use your favorite IDE or development tools like grunt/gulp/sass and especially livereload.
 
 ## Installation
 
