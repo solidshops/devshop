@@ -1,4 +1,4 @@
-# SolidShops Development environment v1.0.0 
+# SolidShops Development Environment
 
 [![Travis](https://travis-ci.org/solidshops/devshop.svg)](https://travis-ci.org/solidshops/devshop)
 
