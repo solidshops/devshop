@@ -25,7 +25,11 @@ exports.staticgenerated = function (req, res) {
                 h[response.rawHeaders[i]] = response.rawHeaders[Number(i) + 1];
             }
         }*/
-        var h = {'Content-Type': response.headers['content-type']};
+        var h = {
+            'Content-Type': response.headers['content-type'],
+            'Access-Control-Allow-Origin': response.headers['*'],
+            'Access-Control-Allow-Headers': "Origin, X-Requested-With, Content-Type, Accept"
+        };
 
         res.set(h);
 
@@ -37,22 +41,3 @@ exports.staticgenerated = function (req, res) {
 
 
 };
-
-
-/*exports.static = function (req, res) {
- // Note: should use a stream here, instead of fs.readFile
- file = nconf.get().theme.folder + "/files" + req.originalUrl.replace('/static', '');
-
- fs.readFile(file , function(err, data) {
- if(err) {
- res.send("Oops! Couldn't find that file.");
- } else {
- // set the content type based on the file
- var mime = require('mime');
-
- res.header("content-type",mime.lookup(file));
- res.send(data);
- }
- res.end();
- });
- }*/
