@@ -61,10 +61,28 @@ describe('Service: proxy', function () {
               expect(responseObject.headers['location']).to.contain(nconf.get().www.scheme);
               done();
           });
-      });
+        });
 
 
+        it('POST /cart/add/{id} should return session cookie', function (done) {
+            var productId = "1";
 
+            var obj_proxy = new proxy();
+
+            var configObject = {};
+            configObject.method ="POST";
+            configObject.path = "/cart/add/"+productId;
+           // configObject.cartId = "1";
+
+            obj_proxy.request(configObject,function(responseObject){
+
+                validateProxyResponse(responseObject);
+                expect(responseObject.statusCode).to.equal(302);
+                expect(responseObject.headers['location']).to.contain("/cart");
+                expect(responseObject.headers['set-cookie'][0]).to.contain("PHPSESSID");
+                done();
+            });
+        });
 
 
 });

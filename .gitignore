@@ -4,4 +4,5 @@ data/
 node_modules/
 config/config.json
 coverage
+theme_unittests/
 write_file.txt

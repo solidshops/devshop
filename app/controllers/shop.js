@@ -28,6 +28,7 @@ exports.render = function (req, res) {
 
         configObject.sessionId = req.cookies['PHPSESSID'];
         configObject.header_cookie = req.headers['cookie'];
+
         obj_proxy.request(configObject, function (responseObject) {
             //console.log(responseObject.headers)
 
