@@ -27,8 +27,8 @@ exports.staticgenerated = function (req, res) {
         }*/
         var h = {
             'Content-Type': response.headers['content-type'],
-            'Access-Control-Allow-Origin': response.headers['*'],
-            'Access-Control-Allow-Headers': "Origin, X-Requested-With, Content-Type, Accept"
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
         };
 
         res.set(h);
