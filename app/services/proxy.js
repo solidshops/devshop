@@ -118,7 +118,7 @@ module.exports = function () {
                         returnObject.headers["location"] = replaceLinks(returnObject.headers["location"]);
                     }
                     
-                    delete returnObject.headers['set-cookie'];
+                    //delete returnObject.headers['set-cookie'];
                     delete returnObject.headers['content-length'];
                     
                     //console.log(returnObject);
