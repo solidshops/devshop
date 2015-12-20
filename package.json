@@ -55,5 +55,9 @@
     "mocha": "^2.1.0",
     "nock": "^0.59.1",
     "supertest": "^0.15.0"
+  },
+  "engine-strict" : true,
+  "engines": {
+    "node": ">=0.12.4"
   }
 }
