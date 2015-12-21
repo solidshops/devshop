@@ -28,7 +28,8 @@
     "archiver" : "0.14.4",
     "commander":"2.8.1",
     "grunt-exec":"0.4.6",
-    "deasync":"*"
+    "deasync":"0.1.4",
+    "semver" : "5.1.0"
   },
   "devDependencies": {
     "chai": "^2.1.0",
@@ -58,6 +59,6 @@
   },
   "engine-strict" : true,
   "engines": {
-    "node": ">=0.12.4"
+    "node": ">=0.12.0"
   }
 }

@@ -11,6 +11,17 @@ var errorHandler = require('errorhandler');
 var chalk = require('chalk');
 var logger = require('morgan');
 var nconf = require('nconf');
+var fs = require('fs');
+var semver = require('semver');
+
+//shutdown application if node version is not compatible
+var packageString = fs.readFileSync("package.json", "utf8");
+packageJson = JSON.parse(packageString);
+var versionPackage = packageJson.engines['node']; 
+if( ! semver.satisfies(process.version,versionPackage)){
+	console.log("node version is not compatible, needs " + versionPackage);
+	process.exit();
+}
 
 
 // Create Express app
