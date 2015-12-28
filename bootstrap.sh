@@ -28,3 +28,7 @@ npm install -g bower
 # Install Grunt
 # -------------
 npm install -g grunt-cli
+
+# Install node v0.12
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install -y nodejs 
