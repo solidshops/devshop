@@ -1,0 +1,7 @@
+web:
+  build: .
+  volumes: 
+    - ".:/app"
+    - "../themes:/themes"
+  ports:
+   - "5000:5000"
