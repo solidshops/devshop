@@ -11,9 +11,9 @@ apt-get update
 # -----------
 apt-get install -y curl
 
-# Install Node js
-# ---------------
-sudo apt-get install -y nodejs
+# Install Node js 5.3
+# -------------------
+curl -sL https://deb.nodesource.com/setup_5.3 | sudo bash -
 sudo apt-get install -y nodejs-legacy
 sudo apt-get install -y npm
 
@@ -29,6 +29,4 @@ npm install -g bower
 # -------------
 npm install -g grunt-cli
 
-# Install node v0.12
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
-sudo apt-get install -y nodejs 
+
