@@ -26,6 +26,13 @@ If you want to run this application from your computer you need to have Node.js 
 ###### Vagrant box
 You probably already installed nodejs on your computer but if you are running an incompatible version(or you just don't want to install NodeJs on your computer) you can also use our vagrant box.
 
+* change ip in config.json to 192.168.2.2
+* vagrant up
+* vagrant ssh
+* cd /vagrant/devshop
+* grunt serve
+* http://192.168.2.2:3000/
+
 ### 2. Install application
 
 ```bash
