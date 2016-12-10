@@ -28,7 +28,7 @@
     "archiver" : "0.14.4",
     "commander":"2.8.1",
     "grunt-exec":"0.4.6",
-    "deasync":"0.1.4",
+    "deasync":"0.1.9",
     "semver" : "5.1.0"
   },
   "devDependencies": {
