@@ -23,12 +23,11 @@
     "nconf":"0.7.1",
     "express-session": "1.11.3",
     "express-http-proxy" : "*",
-    "http-proxy" : "*",
-    "mime" : "1.3.4",
+    "http-proxy" : "1.17.0",
     "archiver" : "0.14.4",
     "commander":"2.8.1",
     "grunt-exec":"0.4.6",
-    "deasync":"0.1.9",
+    "deasync":"0.1.13",
     "semver" : "5.1.0"
   },
   "devDependencies": {
